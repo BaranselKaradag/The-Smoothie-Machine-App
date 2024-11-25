@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e74c3c; /* Red theme */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e74c3c; /* Red theme */
+}
+
+/* Section for summary and image */
+#summaryAndImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between output and form */
+}
+
+/* Order summary styling */
+#orderSummary {
+    background: #fbeaea; /* Light red background */
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #e74c3c;
+    margin-bottom: 15px; /* Space between summary and image */
+    display: none; /* Hidden by default */
+}
+
+/* Smoothie image styling */
+#smoothieImage {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+#smoothieImage img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* Main Form Styling */
+main {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Label Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e74c3c; /* Red theme */
+}
+
+/* Input and Select Styling */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Fieldset Styling for Extras */
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    color: #e74c3c; /* Red theme */
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 5px;  /* Adjust horizontal spacing */
+    margin-bottom: 5px;  /* Reduce vertical gap between checkboxes */
+    font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+    background: #e74c3c; /* Red theme */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 15px; /* Space between button and form fields */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #c0392b; /* Darker red for hover effect */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-top: 5px;
+}

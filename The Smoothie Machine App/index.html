@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Smoothie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Header -->
+    <header>
+        <h1>Order Your Custom Smoothie</h1>
+        <p>Create a delicious smoothie with your favorite ingredients!</p>
+    </header>
+
+    <!-- Order summary and smoothie image at the top -->
+    <section id="summaryAndImage">
+        <!-- Section for order summary -->
+        <div id="orderSummary" style="display:none;"></div>
+
+        <!-- Section for smoothie image -->
+        <div id="smoothieImage"></div>
+    </section>
+
+    <!-- Smoothie Order Form -->
+    <main>
+        <form id="smoothieForm">
+            <!-- Order button moved to the top -->
+            <button type="button" id="orderButton">Order Smoothie</button>
+        
+            <!-- Input for customer's name -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+        
+            <!-- Smoothie size dropdown -->
+            <label for="size">Choose Size:</label>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        
+            <!-- Multi-select for ingredients -->
+            <label for="ingredients">Select Ingredients:</label>
+            <select id="ingredients" multiple>
+                <option value="strawberries">Strawberries</option>
+                <option value="bananas">Bananas</option>
+                <option value="blueberries">Blueberries</option>
+                <option value="spinach">Spinach</option>
+                <option value="mango">Mango</option>
+            </select>
+        
+            <!-- Dropdown for base selection -->
+            <label for="base">Choose a Base:</label>
+            <select id="base">
+                <option value="water">Water</option>
+                <option value="milk">Milk</option>
+                <option value="yogurt">Yogurt</option>
+                <option value="juice">Juice</option>
+            </select>
+        
+            <!-- Checkboxes for extras -->
+            <fieldset>
+                <legend>Extras:</legend>
+                <label><input type="checkbox" name="extras" value="Whipped Cream"> Whipped Cream</label>
+                <label><input type="checkbox" name="extras" value="Almond Butter"> Almond Butter</label>
+                <label><input type="checkbox" name="extras" value="Granola"> Granola</label>
+            </fieldset>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smoothie Maker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
